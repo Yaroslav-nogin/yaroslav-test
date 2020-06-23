@@ -1,0 +1,56 @@
+.joy {
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 80px;
+}
+.joy__content {
+  background-color: $bg-light;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.joy__header {
+  padding-top: 60px;
+  color: $bg-dark;
+  @include poppins_bold;
+  font-size: 28px;
+  font-weight: 700;
+}
+.joy__text-description {
+  max-width: 510px;
+  text-align: center;
+  padding: 15px 0 30px 0;
+  @include proxima-regular;
+  color: $bg-dark;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.joy__button-light {
+  margin-right: 15px;
+  padding: 10px 80px;
+  box-shadow: 0 0 10px rgba(71, 71, 71, 0.1);
+  border-radius: 50px;
+  border: 1px solid $text;
+  border-color: $text;
+  color: $text;
+  background-color: $text-light;
+  @include proxima-regular;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .joy__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .find__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .joy__button-light {
+    width: 100%;
+  }
+}

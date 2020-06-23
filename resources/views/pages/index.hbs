@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> ../common/head }}
+</head>
+<body>
+
+  <div class="first">
+    <div class="first__show-menu" id="show-block">
+      <a class="first__button-close" id="hide" href="#"><img src="images/button-close.svg" alt="button-close"></a>
+      <div class="first__vertical-menu">
+        <h3 class="first__vertical-header">Menu</h3>
+        <a class="first__vertical-link" href="#">Life Insurance</a>
+        <a class="first__vertical-link" href="#">Car Insurance</a>
+        <a class="first__vertical-link" href="#">Investing</a>
+        <a class="first__vertical-link" href="#">Build Credit</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="top-menu">
+    <div class="container">
+      <div class="top-menu__flex">
+            <div class="top-menu__image">
+              <img class="top-menu__wallet" src="images/wallet-green.svg" alt="wallet">
+            </div>
+            <div class="top-menu__links">
+              <ul>
+                <li><a class="top-menu__link-text" href="#">Life Insurance</a></li>
+                <li><a class="top-menu__link-text" href="#">Car Insurance</a></li>
+                <li><a class="top-menu__link-text" href="#">Investing</a></li>
+                <li><a class="top-menu__link-text" href="#">Build Credit</a></li>
+                <li><a class="top-menu__button-show" id="show" href="#"><img src="images/button-more.svg" alt="button-more"></a></li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="find">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="find__text">
+            <h4 class="find__text-title">How to Find the Best Savings Accounts</h4>
+            <p class="find__text-description">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+            <a class="find__button" href="#">Read More</a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="find__image">
+            <img class="find__happy" src="images/find-bg.png" alt="happy-people">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="compare-options">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="compare-options__section-header text-center">Easily compare all of your options</h2>
+        </div>
+      </div>
+      <div class="options text-center">
+        <div class="row">
+          {{#each option}}
+          <div class="col-md-3 col-sm-12">
+              <div class="options__option-box">
+                <img class="options__box-image" src="{{image}}"alt="">
+                <p class="options__name">{{name}}</p>
+              </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular">
+    <div class="container">
+      <h2 class="popular__start">Popular post</h2>
+
+      <div class="row">
+        {{#each popular-two}}
+          <div class="col-md-6">
+            <div class="popular__two-box" style="background-image: url('{{image}}')">
+            </div>
+              <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+              <h2 class="popular__two-header">{{header}}</h2>
+          </div>
+        {{/each}}
+      </div>
+
+      <div class="row">
+        {{#each popular-three}}
+          <div class="col-md-4 col-sm-12">
+            <div class="popular__three-box" style="background-image: url('{{image}}')">
+            </div>
+            <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+            <h2 class="popular__three-header">{{header}}</h2>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="start-today">
+    <div class="container">
+      <div class="start-today__background">
+        <div class="start-today__content">
+          <h1 class="start-today__header-first">START BUILDING TODAY</h1>
+          <h2 class="start-today__header-second">Build Your Credit History & Save Money.</h2>
+          <a class="find__button-light" href="#">CTA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="save-money">
+    <div class="container">
+      <h2 class="popular__start">Save Money</h2>
+
+      <div class="row">
+        {{#each save-money}}
+          <div class="col-md-6">
+            <div class="save-money__main-box">
+              <div class="save-money__box" style="background-image: url('{{image}}')">
+              </div>
+              <div class="save-money__content">
+                <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+                <h2 class="popular__two-header">{{header}}</h2>
+              </div>
+            </div>
+            </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="life-guides">
+    <div class="container">
+      <h2 class="popular__start">Life Guides</h2>
+
+      <div class="row">
+        {{#each life-guides}}
+          <div class="col-md-4">
+            <div class="popular__three-box" style="background-image: url('{{image}}')">
+            </div>
+            <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+            <h2 class="popular__three-header">{{header}}</h2>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="make-money">
+    <div class="container">
+      <h2 class="popular__start">Make Money</h2>
+
+      <div class="row">
+        {{#each make-money}}
+          <div class="col-md-6">
+            <div class="popular__two-box" style="background-image: url('{{image}}')">
+            </div>
+            <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+            <h2 class="popular__two-header">{{header}}</h2>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="joy">
+    <div class="container">
+      <div class="joy__content">
+        <h2 class="joy__header">Find joy in your inbox.</h2>
+        <p class="joy__text-description">Exclusive promotions, rewards and insights on the journey to financial freedom. Earn & save more today.</p>
+        <div class="joy__buttons">
+          <a class="joy__button-light" href="#">Enter your phone Email</a>
+          <a class="find__button" href="#">Submit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer__row">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <img class="wallet-light" src="images/footer/wallet-white.svg" alt="wallet-white">
+            <p class="footer__text-description">Short description about the company Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s.</p>
+            <div class="footer__social-media">
+              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/facebook.svg" alt="facebook"></a>
+              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/twitter.svg" alt="twitter"></a>
+              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/pinterest.svg" alt="pinterest"></a>
+              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/linked_in.svg" alt="linked_in"></a>
+            </div>
+          </div>
+
+          {{#each links}}
+            <div class="col-md-3 col-sm-6">
+              <div class="footer__block-links">
+                <h3 class="footer__headers">{{header}}</h3>
+                <ul>
+                  <li><a class="footer__links" href="#">{{li-one}}</a></li>
+                  <li><a class="footer__links" href="#">{{li-two}}</a></li>
+                  <li><a class="footer__links" href="#">{{li-three}}</a></li>
+                  <li><a class="footer__links" href="#">{{li-four}}</a></li>
+                </ul>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="footer__line"></div>
+      <h2 class="footer__end">© 2020 Wallet Saver</h2>
+    </div>
+  </section>
+
+</body>
+</html>

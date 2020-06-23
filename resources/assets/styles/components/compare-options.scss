@@ -1,0 +1,58 @@
+.compare-options {
+  max-height: 455px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $bg-light;
+}
+.compare-options__section-header {
+  color: $bg-dark;
+  @include proxima-nova_bold;
+  font-size: 34px;
+  font-weight: 700;
+}
+.options {
+  padding-top: 35px;
+}
+.options__option-box {
+  padding-top: 45px;
+  padding-bottom: 35px;
+  max-height: 193px;
+  background-color: $text-light;
+}
+.options__box-image {
+  height: 58px;
+  width: 65px;
+}
+.options__name {
+  padding-top: 25px;
+  @include proxima-semibold;
+}
+@media (max-width: 768px) {
+  .compare-options {
+    max-height: 700px;
+    padding-top: 30px;
+  }
+  .options__option-box {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 76px;
+    padding-left: 23px;
+    margin-top: 10px;
+  }
+  .options__box-image {
+    height: 32px;
+    width: 32px;
+  }
+  .options__name {
+    padding-top: 10px;
+    padding-left: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .options__option-box {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-height: 150px;
+  }
+}
