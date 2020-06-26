@@ -1,8 +1,8 @@
 .popular {
-  padding-top: 80px;
+  margin-top: 80px;
 }
 .popular__start {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: $bg-dark;
   @include proxima-nova_bold;
   font-size: 28px;
@@ -17,15 +17,19 @@
   background-position: center;
 }
 .popular__two-caption {
-  padding-top: 25px;
-  padding-bottom: 12px;
-  @include poppins_regular;
-}
-.popular__two-header {
-  padding-bottom: 40px;
-  @include proxima-nova_bold;
-  font-size: 24px;
-  color: $bg-dark;
+  p {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    @include poppins_regular;
+  }
+  h2 {
+    a {
+      padding-bottom: 40px;
+      @include proxima-nova_bold;
+      font-size: 24px;
+      color: $bg-dark;
+    }
+  }
 }
 .popular__href-text {
   color: $text;

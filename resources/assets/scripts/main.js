@@ -27,10 +27,4 @@ const routes = new Router({
 // // Load Events
 jQuery(document).ready(() => routes.loadEvents());
 
-$('#show').on('click', function () {
-  $('.first').addClass('open');
-})
 
-$('#hide').on('click', function () {
-  $('.first').removeClass('open');
-})

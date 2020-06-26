@@ -22,16 +22,18 @@
     <div class="container">
       <div class="top-menu__flex">
             <div class="top-menu__image">
-              <img class="top-menu__wallet" src="images/wallet-green.svg" alt="wallet">
+              <a href="#"><img src="images/wallet-green.svg" alt="wallet"></a>
             </div>
             <div class="top-menu__links">
               <ul>
-                <li><a class="top-menu__link-text" href="#">Life Insurance</a></li>
-                <li><a class="top-menu__link-text" href="#">Car Insurance</a></li>
-                <li><a class="top-menu__link-text" href="#">Investing</a></li>
-                <li><a class="top-menu__link-text" href="#">Build Credit</a></li>
-                <li><a class="top-menu__button-show" id="show" href="#"><img src="images/button-more.svg" alt="button-more"></a></li>
+                <li><a href="#">Life Insurance</a></li>
+                <li><a href="#">Car Insurance</a></li>
+                <li><a href="#">Investing</a></li>
+                <li><a href="#">Build Credit</a></li>
               </ul>
+            </div>
+            <div class="top-menu__button-show">
+              <a id="show" href="#"><img src="images/button-more.svg" alt="button-more"></a>
             </div>
       </div>
     </div>
@@ -40,16 +42,16 @@
   <section class="find">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-12">
           <div class="find__text">
-            <h4 class="find__text-title">How to Find the Best Savings Accounts</h4>
-            <p class="find__text-description">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+            <h4>How to Find the Best Savings Accounts</h4>
+            <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
             <a class="find__button" href="#">Read More</a>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-lg-7 col-md-12">
           <div class="find__image">
-            <img class="find__happy" src="images/find-bg.png" alt="happy-people">
+            <img src="images/find-bg.svg" alt="happy-people">
           </div>
         </div>
       </div>
@@ -68,8 +70,8 @@
           {{#each option}}
           <div class="col-md-3 col-sm-12">
               <div class="options__option-box">
-                <img class="options__box-image" src="{{image}}"alt="">
-                <p class="options__name">{{name}}</p>
+                <img src="{{image}}"alt="">
+                <p>{{name}}</p>
               </div>
           </div>
           {{/each}}
@@ -87,8 +89,10 @@
           <div class="col-md-6">
             <div class="popular__two-box" style="background-image: url('{{image}}')">
             </div>
-              <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
-              <h2 class="popular__two-header">{{header}}</h2>
+            <div class="popular__two-caption">
+              <p>By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+              <h2><a href="#">{{header}}</a></h2>
+            </div>
           </div>
         {{/each}}
       </div>

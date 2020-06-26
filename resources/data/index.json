@@ -10,12 +10,12 @@
       "name": "Car insurance"
     },
     {
-      "image": "images/compare-options/build_credit.svg",
-      "name": "build credit"
-    },
-    {
       "image": "images/compare-options/investing.svg",
       "name": "Investing"
+    },
+    {
+      "image": "images/compare-options/build_credit.svg",
+      "name": "build credit"
     }
   ],
   "popular-two": [

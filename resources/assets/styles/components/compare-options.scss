@@ -1,6 +1,6 @@
 .compare-options {
   max-height: 455px;
-  padding-top: 80px;
+  margin-top: 80px;
   padding-bottom: 80px;
   background-color: $bg-light;
 }
@@ -11,21 +11,24 @@
   font-weight: 700;
 }
 .options {
-  padding-top: 35px;
+  margin-top: 60px;
 }
 .options__option-box {
   padding-top: 45px;
   padding-bottom: 35px;
   max-height: 193px;
   background-color: $text-light;
+  img {
+    height: 58px;
+    width: 65px;
+  }
+  p {
+    padding-top: 25px;
+    @include proxima-semibold;
+  }
 }
-.options__box-image {
-  height: 58px;
-  width: 65px;
-}
-.options__name {
-  padding-top: 25px;
-  @include proxima-semibold;
+.options__option-box:hover {
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 768px) {
   .compare-options {
