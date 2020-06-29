@@ -1,9 +1,9 @@
 .save-money {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 48px;
 }
 .save-money__main-box {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,5 +17,22 @@
   background-position: center;
 }
 .save-money__content {
-  padding-left: 25px;
+  margin-left: 25px;
+  p {
+    margin-bottom: 12px;
+    @include poppins_regular;
+    color: $date-color;
+    a {
+      color: $text;
+      font-size: 14px;
+      @include proxima-nova_bold;
+    }
+  }
+  h2 {
+    a {
+      @include proxima-nova_bold;
+      font-size: 24px;
+      color: $bg-dark;
+    }
+  }
 }

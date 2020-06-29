@@ -1,26 +1,23 @@
 .start-today__background {
-  background: url("images/start-bg.jpg");
+  background: url("images/start-bg.svg");
   width: 100%;
   height: 300px;
 }
 .start-today__content {
   text-align: center;
-}
-.start-today__header-first {
-  padding-top: 80px;
-  padding-bottom: 10px;
-  color: $text-light;
-  @include proxima-semibold;
-  font-size: 16px;
-  font-weight: 600;
-}
-.start-today__header-second {
-  padding-bottom: 50px;
-  color: $text-light;
-  @include proxima-nova_bold;
-  font-size: 28px;
-  font-weight: 600;
-  text-transform: uppercase;
+  h1 {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    color: $text-light;
+    @include proxima-semibold;
+    font-size: 16px;
+  }
+  h2 {
+    padding-bottom: 50px;
+    color: $text-light;
+    @include proxima-nova_bold;
+    font-size: 28px;
+  }
 }
 .find__button-light {
   padding: 11px 63px;
@@ -31,5 +28,8 @@
   color: $text;
   background-color: $text-light;
   @include poppins_semibold;
-  font-weight: 400;
+}
+.find__button-light:hover {
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
 }

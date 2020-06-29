@@ -28,6 +28,10 @@
   background-color: $text;
   @include proxima-nova_bold;
 }
+.find__button:hover {
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .find__image {
     display: none;

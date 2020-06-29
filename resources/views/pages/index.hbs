@@ -9,11 +9,11 @@
     <div class="first__show-menu" id="show-block">
       <a class="first__button-close" id="hide" href="#"><img src="images/button-close.svg" alt="button-close"></a>
       <div class="first__vertical-menu">
-        <h3 class="first__vertical-header">Menu</h3>
-        <a class="first__vertical-link" href="#">Life Insurance</a>
-        <a class="first__vertical-link" href="#">Car Insurance</a>
-        <a class="first__vertical-link" href="#">Investing</a>
-        <a class="first__vertical-link" href="#">Build Credit</a>
+        <h3>Menu</h3>
+        <a href="#">Life Insurance</a>
+        <a href="#">Car Insurance</a>
+        <a href="#">Investing</a>
+        <a href="#">Build Credit</a>
       </div>
     </div>
   </div>
@@ -62,7 +62,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="compare-options__section-header text-center">Easily compare all of your options</h2>
+          <h2 class="text-center">Easily compare all of your options</h2>
         </div>
       </div>
       <div class="options text-center">
@@ -90,7 +90,7 @@
             <div class="popular__two-box" style="background-image: url('{{image}}')">
             </div>
             <div class="popular__two-caption">
-              <p>By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+              <p>By <a href="#">{{wallet}}</a>{{two-caption}}</p>
               <h2><a href="#">{{header}}</a></h2>
             </div>
           </div>
@@ -102,8 +102,10 @@
           <div class="col-md-4 col-sm-12">
             <div class="popular__three-box" style="background-image: url('{{image}}')">
             </div>
-            <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
-            <h2 class="popular__three-header">{{header}}</h2>
+            <div class="popular__three-caption">
+              <p>By <a href="#">{{wallet}}</a>{{two-caption}}</p>
+              <h2><a href="#">{{header}}</a></h2>
+            </div>
           </div>
         {{/each}}
       </div>
@@ -114,8 +116,8 @@
     <div class="container">
       <div class="start-today__background">
         <div class="start-today__content">
-          <h1 class="start-today__header-first">START BUILDING TODAY</h1>
-          <h2 class="start-today__header-second">Build Your Credit History & Save Money.</h2>
+          <h1>START BUILDING TODAY</h1>
+          <h2>Build Your Credit History & Save Money.</h2>
           <a class="find__button-light" href="#">CTA</a>
         </div>
       </div>
@@ -128,13 +130,13 @@
 
       <div class="row">
         {{#each save-money}}
-          <div class="col-md-6">
+          <div class="col-xl-6 col-md-12">
             <div class="save-money__main-box">
               <div class="save-money__box" style="background-image: url('{{image}}')">
               </div>
               <div class="save-money__content">
-                <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
-                <h2 class="popular__two-header">{{header}}</h2>
+                <p>By <a href="#">{{wallet}}</a>{{two-caption}}</p>
+                <h2><a href="#">{{header}}</a></h2>
               </div>
             </div>
             </div>
@@ -150,10 +152,12 @@
       <div class="row">
         {{#each life-guides}}
           <div class="col-md-4">
-            <div class="popular__three-box" style="background-image: url('{{image}}')">
+            <div class="life-guides__three-box" style="background-image: url('{{image}}')">
             </div>
-            <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
-            <h2 class="popular__three-header">{{header}}</h2>
+            <div class="popular__three-caption">
+              <p>By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
+              <h2><a href="#">{{header}}</a></h2>
+            </div>
           </div>
         {{/each}}
       </div>
@@ -169,8 +173,10 @@
           <div class="col-md-6">
             <div class="popular__two-box" style="background-image: url('{{image}}')">
             </div>
-            <p class="popular__two-caption">By <a class="popular__href-text" href="#">{{wallet}}</a>{{two-caption}}</p>
-            <h2 class="popular__two-header">{{header}}</h2>
+            <div class="popular__two-caption">
+              <p>By <a href="#">{{wallet}}</a>{{two-caption}}</p>
+              <h2><a href="#">{{header}}</a></h2>
+            </div>
           </div>
         {{/each}}
       </div>
@@ -180,14 +186,14 @@
   <section class="joy">
     <div class="container">
       <div class="joy__content">
-        <h2 class="joy__header">Find joy in your inbox.</h2>
-        <p class="joy__text-description">Exclusive promotions, rewards and insights on the journey to financial freedom. Earn & save more today.</p>
+        <h2>Find joy in your inbox.</h2>
+        <p>Exclusive promotions, rewards and insights on the journey to financial freedom. Earn & save more today.</p>
         <div class="joy__buttons">
-          <a class="joy__button-light" href="#">Enter your phone Email</a>
+          <input class="joy__input" type="email" placeholder="Enter your phone Email" required>
           <a class="find__button" href="#">Submit</a>
         </div>
       </div>
-    </div>
+    </div>`
   </section>
 
   <section class="footer">
@@ -195,25 +201,25 @@
       <div class="footer__row">
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <img class="wallet-light" src="images/footer/wallet-white.svg" alt="wallet-white">
-            <p class="footer__text-description">Short description about the company Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s.</p>
+            <a href="#"><img src="images/footer/wallet-white.svg" alt="wallet-white"></a>
+            <p>Short description about the company Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s.</p>
             <div class="footer__social-media">
-              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/facebook.svg" alt="facebook"></a>
-              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/twitter.svg" alt="twitter"></a>
-              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/pinterest.svg" alt="pinterest"></a>
-              <a class="footer__social-icon" href="#"><img class="facebook" src="images/footer/linked_in.svg" alt="linked_in"></a>
+              <a href="#"><img src="images/footer/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="images/footer/twitter.svg" alt="twitter"></a>
+              <a href="#"><img src="images/footer/pinterest.svg" alt="pinterest"></a>
+              <a href="#"><img src="images/footer/linked_in.svg" alt="linked_in"></a>
             </div>
           </div>
 
           {{#each links}}
             <div class="col-md-3 col-sm-6">
               <div class="footer__block-links">
-                <h3 class="footer__headers">{{header}}</h3>
+                <h3>{{header}}</h3>
                 <ul>
-                  <li><a class="footer__links" href="#">{{li-one}}</a></li>
-                  <li><a class="footer__links" href="#">{{li-two}}</a></li>
-                  <li><a class="footer__links" href="#">{{li-three}}</a></li>
-                  <li><a class="footer__links" href="#">{{li-four}}</a></li>
+                  <li><a href="#">{{li-one}}</a></li>
+                  <li><a href="#">{{li-two}}</a></li>
+                  <li><a href="#">{{li-three}}</a></li>
+                  <li><a href="#">{{li-four}}</a></li>
                 </ul>
               </div>
             </div>
@@ -222,7 +228,7 @@
       </div>
 
       <div class="footer__line"></div>
-      <h2 class="footer__end">© 2020 Wallet Saver</h2>
+      <h2>© 2020 Wallet Saver</h2>
     </div>
   </section>
 
