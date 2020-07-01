@@ -9,17 +9,6 @@
 @import "mixins";
 @import "type";
 
-
-@import "components/top-menu";
-@import "components/find-accounts";
-@import "components/compare-options";
-@import "components/popular";
-@import "components/start-today";
-@import "components/save-money";
-@import "components/life-guides";
-@import "components/joy";
-@import "components/footer";
-
 /** Import everything from autoload */
 @import "autoload/lazy";
 
@@ -38,8 +27,20 @@
  * - generic components can be buttons, navs, gallery slider
  * - page-specific components such as testimonials
  */
-// @import "components/buttons";
+
 @import "components/fonts";
+
+@import "components/top-menu";
+@import "components/find-accounts";
+@import "components/compare-options";
+@import "components/popular";
+@import "components/start-today";
+@import "components/save-money";
+@import "components/life-guides";
+@import "components/newsletter";
+@import "components/footer";
+
+
 
 /**
  * ==========

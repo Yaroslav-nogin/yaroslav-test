@@ -17,18 +17,18 @@
   background-position: center;
 }
 .save-money__content {
-  margin-left: 25px;
-  p {
-    margin-bottom: 12px;
+  padding-left: 26px;
+  a {
     @include poppins_regular;
     color: $date-color;
-    a {
+    span {
       color: $text;
       font-size: 14px;
       @include proxima-nova_bold;
     }
   }
   h2 {
+    padding-top: 12px;
     a {
       @include proxima-nova_bold;
       font-size: 24px;
